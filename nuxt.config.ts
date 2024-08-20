@@ -4,6 +4,11 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ["@nuxtjs/tailwindcss", "@nuxthub/core"],
   hub: {
-    database: false
+    database: true
+  },
+  $development: {
+    hub: {
+      remote: true
+    }
   }
 })
